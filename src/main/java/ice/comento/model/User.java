@@ -1,4 +1,4 @@
-package ice.comento.user;
+package ice.comento.model;
 
 import ice.comento.model.BaseEntity;
 
