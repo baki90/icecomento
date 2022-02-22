@@ -1,7 +1,14 @@
 package ice.comento.model;
 
-import ice.comento.model.BaseEntity;
+import javax.persistence.MappedSuperclass;
 
 
-public class User extends BaseEntity {
+@MappedSuperclass
+abstract public class User extends BaseEntity {
+    protected String logId;
+    protected String pw;
+    protected int studentId;
+    protected String nickName;
+    protected String introduction;
+    protected Rank rank;
 }
