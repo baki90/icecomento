@@ -1,9 +1,11 @@
 package ice.comento.model;
 
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
 
 
-@MappedSuperclass
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn
 abstract public class User extends BaseEntity {
     protected String logId;
     protected String pw;

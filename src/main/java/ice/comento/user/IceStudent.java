@@ -5,14 +5,10 @@ import ice.comento.model.User;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 @Entity
-@Table(name = "ice_student")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class IceStudent extends User {
     private Status status;

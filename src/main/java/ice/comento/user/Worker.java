@@ -4,13 +4,9 @@ import ice.comento.model.User;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name = "worker")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Worker extends User {
 
