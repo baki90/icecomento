@@ -8,6 +8,8 @@ import javax.persistence.Entity;
 
 /**
  * 커뮤니티(게시판)
+ * @// FIXME: 2022/03/14 @author jeong-yeonhee
+ * @deprecated 카테고리 Enum으로 관리
  *
  * @author baki90
  */

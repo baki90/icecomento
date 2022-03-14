@@ -11,7 +11,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-
+/**
+ * @author jeong-yeonhee
+ */
 @Entity
 @Table(name = "interests")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)

@@ -9,7 +9,9 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
-
+/**
+ * @author jeong-yeonhee
+ */
 @Entity
 @Table(name = "job")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
