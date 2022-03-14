@@ -5,7 +5,9 @@ import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-
+/**
+ * @author jeong-yeonhee
+ */
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Worker extends User {

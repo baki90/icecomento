@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
+/**
+ * @author jeong-yeonhee
+ */
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class IceStudent extends User {

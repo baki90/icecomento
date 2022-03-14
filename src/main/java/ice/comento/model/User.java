@@ -1,7 +1,9 @@
 package ice.comento.model;
 
 import javax.persistence.*;
-
+/**
+ * @author jeong-yeonhee
+ */
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
