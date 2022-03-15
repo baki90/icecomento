@@ -15,7 +15,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * @// FIXME: 2022/03/15 DB연동 관련 수정
  */
 @Getter
-@Document("test")
+@Document("comment")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Comment extends BaseEntity {
 
