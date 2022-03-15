@@ -13,6 +13,7 @@ import javax.persistence.Entity;
  *
  * @author baki90
  */
+/*
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class BoardCategory extends BaseEntity {
@@ -20,3 +21,4 @@ public class BoardCategory extends BaseEntity {
     private String questionAuth; // 질문 권한
     private String commentAuth; // 댓글 권한
 }
+*/
