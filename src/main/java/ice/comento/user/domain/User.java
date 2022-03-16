@@ -23,7 +23,6 @@ abstract public class User extends BaseEntity {
     protected Rank rank;
     protected UserStatus userStatus;
 
-    @Builder
     protected User(String logId, String pw, int studentId, String nickName, String introduction, Rank rank) {
         this.logId = logId;
         this.setPw(pw);
