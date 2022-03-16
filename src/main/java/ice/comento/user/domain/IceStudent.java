@@ -1,8 +1,6 @@
 
-package ice.comento.user;
+package ice.comento.user.domain;
 
-import ice.comento.model.Rank;
-import ice.comento.model.User;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.NoArgsConstructor;

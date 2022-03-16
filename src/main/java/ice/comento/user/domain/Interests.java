@@ -1,8 +1,7 @@
 
-package ice.comento.user;
+package ice.comento.user.domain;
 
 import ice.comento.model.BaseEntity;
-import ice.comento.model.User;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 

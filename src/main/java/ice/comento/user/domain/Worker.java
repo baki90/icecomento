@@ -1,15 +1,10 @@
-package ice.comento.user;
+package ice.comento.user.domain;
 
-import ice.comento.board.domain.Comment;
-import ice.comento.model.Rank;
-import ice.comento.model.User;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 현직자 정보 entity

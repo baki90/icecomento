@@ -1,4 +1,4 @@
-package ice.comento.model;
+package ice.comento.user.domain;
 /**
  * @author jeong-yeonhee
  * @// FIXME: 2022/03/15

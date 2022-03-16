@@ -1,4 +1,4 @@
-package ice.comento.model;
+package ice.comento.user.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

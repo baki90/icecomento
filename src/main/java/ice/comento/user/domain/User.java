@@ -1,6 +1,6 @@
-package ice.comento.model;
+package ice.comento.user.domain;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
+import ice.comento.model.BaseEntity;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.NoArgsConstructor;

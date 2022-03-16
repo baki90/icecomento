@@ -1,9 +1,6 @@
 package ice.comento.board.domain;
 
-import ice.comento.model.Role;
-import ice.comento.user.Status;
-
-import javax.persistence.Entity;
+import ice.comento.user.domain.Role;
 
 /**
  * @author jeong-yeonhee
