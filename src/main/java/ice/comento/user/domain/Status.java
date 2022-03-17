@@ -1,4 +1,4 @@
-package ice.comento.user;
+package ice.comento.user.domain;
 
 /**
  * @// FIXME: 2022/03/14 영어와 한글 매핑 가능하도록 수정

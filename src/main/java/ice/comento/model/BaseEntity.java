@@ -26,8 +26,4 @@ public abstract class BaseEntity implements Serializable {
     public String getId() {
         return id;
     }
-
-    public void String(String id) {
-        this.id = id;
-    }
 }
