@@ -63,6 +63,7 @@ public class Board extends BaseEntity {
         return board;
     }
 
+
     /**@author jeong-yeonhee
      * 포스트 수정 메서드
      * 조건:게시자는 바꿀 수 없다.
