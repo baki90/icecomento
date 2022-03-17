@@ -1,9 +1,9 @@
 package ice.comento.board.dto;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Set;
 
@@ -11,6 +11,7 @@ import java.util.Set;
  * @author jeong-yeonhee
  */
 @Data
+@Builder
 public class PostDto {
 
     @NotBlank(message = "카테고리는 필수값입니다.")

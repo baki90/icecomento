@@ -7,6 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
+import java.util.Set;
 
 /**
  * 게시글 엔티티
@@ -50,14 +52,14 @@ public class Board extends BaseEntity {
      * @param hashTags
      * @return 생성된 게시글 반환
      */
-    public static Board createPost(Category category, User writer, String title, String contents, Photos photos, HashTags hashTags) {
+    public static Board createPost(String category, User writer, String title, String contents, List<String> photos, Set<String> hashTags) {
         Board board=new Board();
-        board.category = category;
+        board.category = Category.valueOf(category);
         board.writer = writer;
         board.title = title;
         board.contents = contents;
-        board.photos = photos;
-        board.hashTags = hashTags;
+        board.photos = (Photos) photos;
+        board.hashTags = (HashTags) hashTags;
         board.active=true;
         return board;
     }
