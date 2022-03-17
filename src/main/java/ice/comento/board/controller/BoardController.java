@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping("/board")
+@RequestMapping("/api/board")
 @RequiredArgsConstructor
 public class BoardController {
     private final BoardRepository boardRepository;
