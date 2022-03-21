@@ -4,6 +4,7 @@ package ice.comento.user.domain;
 import ice.comento.model.BaseEntity;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
+import org.junit.Ignore;
 
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;

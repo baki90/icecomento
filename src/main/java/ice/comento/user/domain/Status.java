@@ -1,5 +1,9 @@
 package ice.comento.user.domain;
 
+import javax.persistence.Column;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+
 /**
  * @// FIXME: 2022/03/14 영어와 한글 매핑 가능하도록 수정
  * @author jeong-yeonhee
