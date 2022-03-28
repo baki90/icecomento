@@ -4,7 +4,7 @@ import javax.persistence.CollectionTable;
 import javax.persistence.ElementCollection;
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
-import java.util.List;
+import java.util.Set;
 
 @Embeddable
 public class HashTags {
@@ -12,5 +12,8 @@ public class HashTags {
     @ElementCollection
     @CollectionTable(name = "tag",
             joinColumns = @JoinColumn(name = "board_id"))
-    private List<String> hashTags;
+    private Set<String> hashTags;
+
+
+
 }
