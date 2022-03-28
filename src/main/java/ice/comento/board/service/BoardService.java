@@ -4,7 +4,7 @@ import ice.comento.board.domain.Board;
 import ice.comento.board.dto.PostDto;
 import ice.comento.board.repository.BoardRepository;
 import ice.comento.user.domain.Member;
-import ice.comento.user.repository.UserRepository;
+import ice.comento.user.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class BoardService {
     private final BoardRepository boardRepository;
-    private final UserRepository userRepository;
+    private final MemberRepository memberRepository;
 
     /**
      *
@@ -25,7 +25,7 @@ public class BoardService {
      */
     public ResponseEntity<String> createPost(PostDto postDto){
         String writer_id = postDto.getWriter_id();
-        Member member = userRepository.findByLogId(writer_id);
+        Member member = memberRepository.findByLogId(writer_id);
 
         Board board=Board.createPost(postDto.getCategory(), member, postDto.getTitle(),
                 postDto.getContents(),postDto.getPhotos(),postDto.getHashTags());

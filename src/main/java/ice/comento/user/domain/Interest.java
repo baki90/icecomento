@@ -16,7 +16,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "interests")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Interests extends BaseEntity {
+public class Interest extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "ice_student_id")
     private IceStudent iceStudent;
@@ -25,4 +25,18 @@ public class Interests extends BaseEntity {
     @JoinColumn(name = "work_field_id")
     private WorkField workField;
 
+    public static Interest of(IceStudent iceStudent, WorkField workField) {
+        Interest interest = new Interest();
+        interest.setWorkField(workField);
+        interest.setIceStudent(iceStudent);
+        return interest;
+    }
+
+    protected void setWorkField(WorkField workField) {
+        this.workField = workField;
+    }
+
+    protected void setIceStudent(IceStudent iceStudent) {
+        this.iceStudent = iceStudent;
+    }
 }

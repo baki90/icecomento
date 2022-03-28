@@ -19,8 +19,5 @@ public class WorkField extends BaseEntity {
     private String workField;
 
     @OneToMany(mappedBy = "workField",fetch = FetchType.LAZY)
-    private Set<Interests> interests = new LinkedHashSet<>();
-
-    @OneToMany(mappedBy = "workField",fetch = FetchType.LAZY)
     private List<Worker> workerList=new ArrayList<>();
 }

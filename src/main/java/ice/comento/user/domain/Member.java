@@ -23,13 +23,23 @@ abstract public class Member extends BaseEntity {
     protected Rank rank;
     protected MemberStatus memberStatus;
 
-    protected Member(String logId, String pw, int studentId, String nickName, String introduction, Rank rank) {
+    /**
+     * Member Entity 생성
+     * @param logId
+     * @param pw
+     * @param studentId
+     * @param nickName
+     * @param introduction
+     */
+    protected Member(String logId, String pw, int studentId, String nickName, String introduction) {
         this.logId = logId;
         this.setPw(pw);
         this.setNickName(nickName);
         this.studentId = studentId;
         this.introduction = introduction;
-        this.rank = rank;
+        // 신규 가입 유저 BRONZE 등급
+        this.rank = Rank.BRONZE;
+        // USER 활성화
         this.memberStatus = MemberStatus.ACTIVE;
     }
 

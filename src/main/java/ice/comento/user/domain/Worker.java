@@ -22,8 +22,8 @@ public class Worker extends Member {
     private double adoptionRate; // 답변 채택률
 
     @Builder
-    public Worker(String logId, String pw, int studentId, String nickName, String introduction, Rank rank, String company, WorkField workField, double adoptionRate) {
-        super(logId, pw, studentId, nickName, introduction, rank);
+    public Worker(String logId, String pw, int studentId, String nickName, String introduction, String company, WorkField workField, double adoptionRate) {
+        super(logId, pw, studentId, nickName, introduction);
         this.company = company;
         this.workField = workField;
         this.adoptionRate = 0;
