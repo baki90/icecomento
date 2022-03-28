@@ -12,20 +12,20 @@ import javax.persistence.*;
  */
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Worker extends User {
+public class Worker extends Member {
 
     private String company;
 
     @ManyToOne
-    @JoinColumn(name = "job_id")
-    private Job job;
+    @JoinColumn(name = "work_field_id")
+    private WorkField workField;
     private double adoptionRate; // 답변 채택률
 
     @Builder
-    public Worker(String logId, String pw, int studentId, String nickName, String introduction, Rank rank, String company, Job job, double adoptionRate) {
+    public Worker(String logId, String pw, int studentId, String nickName, String introduction, Rank rank, String company, WorkField workField, double adoptionRate) {
         super(logId, pw, studentId, nickName, introduction, rank);
         this.company = company;
-        this.job = job;
+        this.workField = workField;
         this.adoptionRate = 0;
     }
 
@@ -35,11 +35,11 @@ public class Worker extends User {
      * @param nickName
      * @param introduction
      * @param rank
-     * @param job
+     * @param workField
      */
-    public void updateWorker(String pw, String nickName, String introduction, Rank rank, Job job) {
+    public void updateWorker(String pw, String nickName, String introduction, Rank rank, WorkField workField) {
         this.updateUser(pw, nickName, introduction, rank);
-        this.job = job;
+        this.workField = workField;
     }
 
     /**

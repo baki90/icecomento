@@ -1,7 +1,7 @@
 package ice.comento.board.domain;
 
 import ice.comento.model.BaseEntity;
-import ice.comento.user.domain.User;
+import ice.comento.user.domain.Member;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,7 +26,7 @@ public class Board extends BaseEntity {
 
     @ManyToOne
     @JoinColumn(name = "writer_id")
-    private User writer; // 글쓴이
+    private Member writer; // 글쓴이
 
     private String title; // 게시글 제목
 
@@ -52,7 +52,7 @@ public class Board extends BaseEntity {
      * @param hashTags
      * @return 생성된 게시글 반환
      */
-    public static Board createPost(String category, User writer, String title, String contents, List<String> photos, Set<String> hashTags) {
+    public static Board createPost(String category, Member writer, String title, String contents, List<String> photos, Set<String> hashTags) {
         Board board=new Board();
         board.category = Category.valueOf(category);
         board.writer = writer;

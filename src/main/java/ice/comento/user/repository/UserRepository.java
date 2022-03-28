@@ -1,9 +1,9 @@
 package ice.comento.user.repository;
 
-import ice.comento.user.domain.User;
+import ice.comento.user.domain.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository<T extends User> extends JpaRepository<T, String> {
+public interface UserRepository<T extends Member> extends JpaRepository<T, String> {
 
-    User findByLogId(String writer_id);
+    Member findByLogId(String writer_id);
 }

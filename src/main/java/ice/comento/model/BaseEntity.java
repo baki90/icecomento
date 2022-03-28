@@ -15,7 +15,7 @@ import java.io.Serializable;
 public abstract class BaseEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Long id;
 
     // TODO: 아래 컬럼 추가할 것
     // create time
@@ -23,7 +23,7 @@ public abstract class BaseEntity implements Serializable {
     // update time
     // updater
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 }

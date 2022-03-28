@@ -9,7 +9,7 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor
-public enum UserStatus {
+public enum MemberStatus {
     ACTIVE("활성"),
     SLEEP("휴면계정"),
     WITHDRAW("탈퇴");

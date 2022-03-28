@@ -4,7 +4,6 @@ package ice.comento.user.domain;
 import ice.comento.model.BaseEntity;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
-import org.junit.Ignore;
 
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
@@ -23,7 +22,7 @@ public class Interests extends BaseEntity {
     private IceStudent iceStudent;
 
     @ManyToOne
-    @JoinColumn(name = "job_id")
-    private Job job;
+    @JoinColumn(name = "work_field_id")
+    private WorkField workField;
 
 }
