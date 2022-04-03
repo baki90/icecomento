@@ -13,14 +13,11 @@ import java.util.Set;
  * @author jeong-yeonhee
  */
 @Entity
-@Table(name = "job")
+@Table(name = "work_field")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Job extends BaseEntity {
-    private String job;
+public class WorkField extends BaseEntity {
+    private String workField;
 
-    @OneToMany(mappedBy = "job",fetch = FetchType.LAZY)
-    private Set<Interests> interests = new LinkedHashSet<>();
-
-    @OneToMany(mappedBy = "job",fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "workField",fetch = FetchType.LAZY)
     private List<Worker> workerList=new ArrayList<>();
 }
